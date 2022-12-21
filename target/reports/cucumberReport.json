@@ -1,0 +1,100 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language:pt"
+      }
+    ],
+    "line": 3,
+    "elements": [
+      {
+        "line": 6,
+        "name": "registrar novo usuario com sucesso",
+        "description": "",
+        "id": "cadastro-de-usuario;registrar-novo-usuario-com-sucesso",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2184903700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "que acesso a pagina home",
+            "match": {
+              "location": "LoginSteps.acessoAPaginaLogin()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 459361700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "acesso cadastro de usuario",
+            "match": {
+              "location": "CadastroSteps.acessoCadastroDeUsuario()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 624265000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "preencho formulario de cadastro",
+            "match": {
+              "location": "CadastroSteps.preenchoFormularioDeCadastro()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 1950259800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "clico em registrar",
+            "match": {
+              "location": "CadastroSteps.clicoEmRegistrar()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 61724800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "valido a mensagem cadastro realizado com sucesso",
+            "match": {
+              "location": "CadastroSteps.validoAMensagemCadastroRealizadoComSucesso()"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@cadastro_sucesso"
+          }
+        ]
+      }
+    ],
+    "name": "cadastro de usuario",
+    "description": "",
+    "id": "cadastro-de-usuario",
+    "keyword": "Funcionalidade",
+    "uri": "features/cadastro.feature",
+    "tags": [
+      {
+        "line": 2,
+        "name": "@cadastro"
+      }
+    ]
+  }
+]
