@@ -4,18 +4,17 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.security.SecureRandom;
 import java.util.Random;
 
-import static runner.RunCucumberTest.driver;
+import static runner.RunBase.getDriver;
 
 public class Utils {
-    public void esperarElementoPresente(By elemente, int i){
-        WebDriverWait wait = new WebDriverWait(driver, i);
+    public static void esperarElementoPresente(By elemente, int i){
+        WebDriverWait wait = new WebDriverWait(getDriver(), i);
         wait.until(ExpectedConditions.elementToBeClickable(elemente));
     }
 
-    public String randomName(){
+    public static String randomName(){
         String emailInt = "Qazando_";
 
         Random random = new Random();

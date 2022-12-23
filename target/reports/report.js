@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("features/cadastro.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("features/mensager.feature");
 formatter.feature({
   "comments": [
     {
@@ -7,89 +7,83 @@ formatter.feature({
     }
   ],
   "line": 3,
-  "name": "cadastro de usuario",
+  "name": "que estou na tela de mensagem",
   "description": "",
-  "id": "cadastro-de-usuario",
+  "id": "que-estou-na-tela-de-mensagem",
   "keyword": "Funcionalidade",
   "tags": [
     {
       "line": 2,
-      "name": "@cadastro"
+      "name": "@mensagemComSucesso"
     }
   ]
 });
 formatter.scenario({
-  "line": 6,
-  "name": "registrar novo usuario com sucesso",
+  "line": 5,
+  "name": "enviar mensagem de sucesso",
   "description": "",
-  "id": "cadastro-de-usuario;registrar-novo-usuario-com-sucesso",
+  "id": "que-estou-na-tela-de-mensagem;enviar-mensagem-de-sucesso",
   "type": "scenario",
-  "keyword": "Cenario",
-  "tags": [
-    {
-      "line": 5,
-      "name": "@cadastro_sucesso"
-    }
-  ]
+  "keyword": "Cenario"
 });
 formatter.step({
-  "line": 7,
-  "name": "que acesso a pagina home",
+  "line": 6,
+  "name": "que estou na home",
   "keyword": "Dado "
 });
 formatter.step({
+  "line": 7,
+  "name": "clico em mensagem",
+  "keyword": "Quando "
+});
+formatter.step({
   "line": 8,
-  "name": "acesso cadastro de usuario",
+  "name": "preencho todos os campos",
   "keyword": "E "
 });
 formatter.step({
   "line": 9,
-  "name": "preencho formulario de cadastro",
-  "keyword": "Quando "
-});
-formatter.step({
-  "line": 10,
-  "name": "clico em registrar",
+  "name": "clico em enviar mensagem",
   "keyword": "E "
 });
 formatter.step({
-  "line": 11,
-  "name": "valido a mensagem cadastro realizado com sucesso",
+  "line": 10,
+  "name": "vejo mensagem com sucesso",
   "keyword": "Entao "
 });
 formatter.match({
-  "location": "LoginSteps.acessoAPaginaLogin()"
+  "location": "MensageSteps.que_estou_na_home()"
 });
 formatter.result({
-  "duration": 2184903700,
+  "duration": 5411292700,
   "status": "passed"
 });
 formatter.match({
-  "location": "CadastroSteps.acessoCadastroDeUsuario()"
+  "location": "MensageSteps.clico_em_mensagem()"
 });
 formatter.result({
-  "duration": 459361700,
+  "duration": 1991770900,
   "status": "passed"
 });
 formatter.match({
-  "location": "CadastroSteps.preenchoFormularioDeCadastro()"
+  "location": "MensageSteps.preencho_todos_os_campos()"
 });
 formatter.result({
-  "duration": 624265000,
+  "duration": 417564100,
   "status": "passed"
 });
 formatter.match({
-  "location": "CadastroSteps.clicoEmRegistrar()"
+  "location": "MensageSteps.clico_em_enviar_mensagem()"
 });
 formatter.result({
-  "duration": 1950259800,
+  "duration": 101533800,
   "status": "passed"
 });
 formatter.match({
-  "location": "CadastroSteps.validoAMensagemCadastroRealizadoComSucesso()"
+  "location": "MensageSteps.vejo_mensagem_com_sucesso()"
 });
 formatter.result({
-  "duration": 61724800,
+  "duration": 29292900,
   "status": "passed"
 });
 });

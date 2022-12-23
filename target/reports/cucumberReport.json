@@ -9,91 +9,85 @@
     "line": 3,
     "elements": [
       {
-        "line": 6,
-        "name": "registrar novo usuario com sucesso",
+        "line": 5,
+        "name": "enviar mensagem de sucesso",
         "description": "",
-        "id": "cadastro-de-usuario;registrar-novo-usuario-com-sucesso",
+        "id": "que-estou-na-tela-de-mensagem;enviar-mensagem-de-sucesso",
         "type": "scenario",
         "keyword": "Cenario",
         "steps": [
           {
             "result": {
-              "duration": 2184903700,
+              "duration": 5411292700,
               "status": "passed"
             },
-            "line": 7,
-            "name": "que acesso a pagina home",
+            "line": 6,
+            "name": "que estou na home",
             "match": {
-              "location": "LoginSteps.acessoAPaginaLogin()"
+              "location": "MensageSteps.que_estou_na_home()"
             },
             "keyword": "Dado "
           },
           {
             "result": {
-              "duration": 459361700,
+              "duration": 1991770900,
               "status": "passed"
             },
-            "line": 8,
-            "name": "acesso cadastro de usuario",
+            "line": 7,
+            "name": "clico em mensagem",
             "match": {
-              "location": "CadastroSteps.acessoCadastroDeUsuario()"
-            },
-            "keyword": "E "
-          },
-          {
-            "result": {
-              "duration": 624265000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "preencho formulario de cadastro",
-            "match": {
-              "location": "CadastroSteps.preenchoFormularioDeCadastro()"
+              "location": "MensageSteps.clico_em_mensagem()"
             },
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 1950259800,
+              "duration": 417564100,
               "status": "passed"
             },
-            "line": 10,
-            "name": "clico em registrar",
+            "line": 8,
+            "name": "preencho todos os campos",
             "match": {
-              "location": "CadastroSteps.clicoEmRegistrar()"
+              "location": "MensageSteps.preencho_todos_os_campos()"
             },
             "keyword": "E "
           },
           {
             "result": {
-              "duration": 61724800,
+              "duration": 101533800,
               "status": "passed"
             },
-            "line": 11,
-            "name": "valido a mensagem cadastro realizado com sucesso",
+            "line": 9,
+            "name": "clico em enviar mensagem",
             "match": {
-              "location": "CadastroSteps.validoAMensagemCadastroRealizadoComSucesso()"
+              "location": "MensageSteps.clico_em_enviar_mensagem()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 29292900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "vejo mensagem com sucesso",
+            "match": {
+              "location": "MensageSteps.vejo_mensagem_com_sucesso()"
             },
             "keyword": "Entao "
-          }
-        ],
-        "tags": [
-          {
-            "line": 5,
-            "name": "@cadastro_sucesso"
           }
         ]
       }
     ],
-    "name": "cadastro de usuario",
+    "name": "que estou na tela de mensagem",
     "description": "",
-    "id": "cadastro-de-usuario",
+    "id": "que-estou-na-tela-de-mensagem",
     "keyword": "Funcionalidade",
-    "uri": "features/cadastro.feature",
+    "uri": "features/mensager.feature",
     "tags": [
       {
         "line": 2,
-        "name": "@cadastro"
+        "name": "@mensagemComSucesso"
       }
     ]
   }

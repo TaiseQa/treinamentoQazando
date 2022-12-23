@@ -1,24 +1,20 @@
 package pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+import runner.RunCucumberTest;
 import suport.Utils;
 
-public class LoginPage extends Utils {
-    WebDriver driver;
+public class LoginPage extends RunCucumberTest {
+
     private By logo = new By.ByCssSelector("[alt='Itera logo']");
-
-
-    public LoginPage(WebDriver driver) {
-        this.driver = driver;
-    }
+    private By inscrever = new By.ByCssSelector("[href='/UserRegister/NewUser']");
 
     public void acessoAPaginaLogin() {
-        driver.get("https://itera-qa.azurewebsites.net");
-        esperarElementoPresente(logo, 20);
+        getDriver().get("https://itera-qa.azurewebsites.net");
+        Utils.esperarElementoPresente(logo, 20);
     }
+
     public void acessoCadastroDeUsuario() {
-
-
+        getDriver().findElement(inscrever).click();
     }
 }
